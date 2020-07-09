@@ -57,39 +57,35 @@
             if(paragraphElements[index]) {
              paragraphElements[index].innerHTML = paragraphs[index];
             }
-            // create a reference to the form
-    let contactForm = document.getElementById("contactForm");
-    
-    
-    if(contactForm) {
-        /**          
-         * event listener with inline anonymous event handler function */
-        contactForm.addEventListener("submit", function(event){
-            event.preventDefault();
-            console.log("submitted");
-            showFormInput();
-            contactForm.reset();
-        });
-    }
-    
-    /**
-     * This function shows the input from each form field on the console     
-     * @method showFormInput
-     * @return {void} 
-     */
-    function showFormInput() {
-        console.log("------------------------------------");
-        console.log("First Name: " + firstName.value);
-        console.log("Last Name: " + lastName.value);
-        console.log("Email : " + email.value);
-        console.log("Contact no: " + contactNumber.value);
-        console.log("Message: " + yourMessage.value);
-        console.log("------------------------------------");
-}
-})();
-
+        }
+        // create a reference to the form
+        let contactForm = document.getElementById("contactForm");
         
         
+        if(contactForm) {
+            /**          
+             * event listener with inline anonymous event handler function */
+            contactForm.addEventListener("submit", function(event){
+                event.preventDefault();
+                console.log("submitted");
+                showFormInput();
+                contactForm.reset();
+            });
+        }
+        
+        /**
+         * This function shows the input from each form field on the console     
+         * @method showFormInput
+         * @return {void} 
+         */
+        function showFormInput() {
+            console.log("------------------------------------");
+            console.log("First Name: " + firstName.value);
+            console.log("Last Name: " + lastName.value);
+            console.log("Email : " + email.value);
+            console.log("Contact no: " + contactNumber.value);
+            console.log("Message: " + yourMessage.value);
+            console.log("------------------------------------");
     }
     })();
     
