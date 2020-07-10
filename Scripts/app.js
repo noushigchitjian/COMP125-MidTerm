@@ -85,7 +85,12 @@
             console.log("Email : " + email.value);
             console.log("Contact no: " + contactNumber.value);
             console.log("Message: " + yourMessage.value);
-            console.log("------------------------------------");
-    }
+            console.log("------------------------------------");              
+        }
     })();
+    function Start() {
+        console.log('%cThe Travel Report App Started!', "font-size: 16px; font-weight:bold; color:darkblue;");     
+         }
+    
+      window.addEventListener("load", Start);
     
