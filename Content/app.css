@@ -24,3 +24,6 @@ article, section {
 #contactForm {
     margin-bottom: 4em;
 }
+.carousel-item {
+    height: 500px;
+}
