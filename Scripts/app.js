@@ -51,13 +51,13 @@
         // check to see if paragraph one exists
         let paragraphElementsLength = paragraphElements.length;
         
-        // // if paragraph exists then populate each paragraph on the page
-        // for (let index = paragraphElementsLength; index >= 0; index--) {
-        //     console.log(index);
-        //     if(paragraphElements[index]) {
-        //      paragraphElements[index].innerHTML = paragraphs[index];
-        //     }
-        // }
+        // if paragraph exists then populate each paragraph on the page
+        for (let index = paragraphElementsLength; index >= 0; index--) {
+            console.log(index);
+            if(paragraphElements[index]) {
+             paragraphElements[index].innerHTML = paragraphs[index];
+            }
+        }
         // create a reference to the form
         let contactForm = document.getElementById("contactForm");
         
