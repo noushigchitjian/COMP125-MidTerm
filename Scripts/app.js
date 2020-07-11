@@ -5,6 +5,7 @@
     * StudentID: 301117936 
     * @description This file is the javascript file for the web site
     */
+    //paragraph injection to the index form
     // setup your IIFE (Immediately Invoked Function Expression)
     (function () {
         "use strict";
